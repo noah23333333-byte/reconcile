@@ -1,0 +1,144 @@
+{
+  "textModel": {
+    "trainSize": 68,
+    "testSize": 16,
+    "tp": 6,
+    "fp": 5,
+    "fn": 2,
+    "tn": 3,
+    "accuracy": 0.5625,
+    "precision": 0.5454545454545454,
+    "recall": 0.75,
+    "f1": 0.631578947368421,
+    "rows": [
+      {
+        "a": "支付清风园区物业费",
+        "b": "清风园区物业服务款",
+        "expected": 1,
+        "score": 0.7073661874728866,
+        "predicted": 1
+      },
+      {
+        "a": "收到青禾公司货款",
+        "b": "青禾公司支付货款",
+        "expected": 1,
+        "score": 0.7778406882063524,
+        "predicted": 1
+      },
+      {
+        "a": "支付金桥会议租赁费",
+        "b": "金桥会议室租金",
+        "expected": 1,
+        "score": 0.536145476059957,
+        "predicted": 1
+      },
+      {
+        "a": "支付新月员工差旅费",
+        "b": "新月差旅报销",
+        "expected": 1,
+        "score": 0.5244968319291812,
+        "predicted": 1
+      },
+      {
+        "a": "summit office rental",
+        "b": "summit rent payment",
+        "expected": 1,
+        "score": 0.6751666960771541,
+        "predicted": 1
+      },
+      {
+        "a": "river shipping fee",
+        "b": "river freight fee",
+        "expected": 1,
+        "score": 0.6678345973321314,
+        "predicted": 1
+      },
+      {
+        "a": "结清外包工程费",
+        "b": "远景技术服务款",
+        "expected": 1,
+        "score": 0.18588940023888545,
+        "predicted": 0
+      },
+      {
+        "a": "交通信服务费",
+        "b": "移动宽带缴费",
+        "expected": 1,
+        "score": 0.2117268270626822,
+        "predicted": 0
+      },
+      {
+        "a": "支付青禾公司货款",
+        "b": "支付清风公司货款",
+        "expected": 0,
+        "score": 0.8978099678175665,
+        "predicted": 1
+      },
+      {
+        "a": "支付会议租赁费",
+        "b": "收到客户销售货款",
+        "expected": 0,
+        "score": 0.18586266590505274,
+        "predicted": 0
+      },
+      {
+        "a": "summit office rental",
+        "b": "river shipping fee",
+        "expected": 0,
+        "score": 0.36226774971387105,
+        "predicted": 0
+      },
+      {
+        "a": "支付789号发票",
+        "b": "支付780号发票",
+        "expected": 0,
+        "score": 0.6507143347879103,
+        "predicted": 1
+      },
+      {
+        "a": "支付九月物业费",
+        "b": "支付九月广告费",
+        "expected": 0,
+        "score": 0.7609644673801427,
+        "predicted": 1
+      },
+      {
+        "a": "收到青禾公司货款",
+        "b": "青禾公司贷款利息",
+        "expected": 0,
+        "score": 0.6894609722469607,
+        "predicted": 1
+      },
+      {
+        "a": "员工出差报销",
+        "b": "年度设备保险费",
+        "expected": 0,
+        "score": 0.18585884695672933,
+        "predicted": 0
+      },
+      {
+        "a": "office rental payment",
+        "b": "customer refund payment",
+        "expected": 0,
+        "score": 0.7906210962698236,
+        "predicted": 1
+      }
+    ]
+  },
+  "demoRuleCheck": {
+    "expectedAutoPairs": 3,
+    "actualAutoPairs": 3,
+    "correctAutoPairs": 3,
+    "precision": 1,
+    "recall": 1,
+    "duplicateLedger": [
+      "L:8",
+      "L:9"
+    ]
+  },
+  "limitations": [
+    "Synthetic examples only; no real transaction benchmark.",
+    "Model score is uncalibrated and never auto-confirms a fuzzy pair.",
+    "Hard negatives deliberately include similar payees and conflicting purposes."
+  ]
+}
